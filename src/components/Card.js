@@ -92,6 +92,10 @@ const Wrapper = styled.article`
         color: var(--clr-white);
       }
     }
+    @media (max-width: 600px) {
+       grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;  
+    }
   }
   .bio {
     color: var(--clr-grey-3);

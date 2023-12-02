@@ -39,8 +39,11 @@ const Wrapper = styled.div`
   position: relative;
   display: grid;
   gap: 1rem 1.75rem;
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr;
+  @media (max-width: 600px) {
+    
+
+    grid-template-columns: 1fr;
     align-items: center;
     h3 {
       padding: 0 0.5rem;
@@ -54,6 +57,10 @@ const Wrapper = styled.div`
     column-gap: 0.5rem;
     border-radius: 5px;
     padding: 0.5rem;
+    @media (max-width: 600) {
+      display: flex;
+      flex-direction: column;
+    }
     input {
       border-color: transparent;
       outline-color: var(--clr-grey-10);

@@ -169,6 +169,7 @@ p {
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
+    padding: 10px 10px;
   }
 }
 .loading-img {

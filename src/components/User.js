@@ -6,10 +6,8 @@ const User = () => {
   return <section className='section'>
     <Wrapper className='section-center'>
       <Card>
-
       </Card>
-      <Followers>
-        
+      <Followers>  
       </Followers>
     </Wrapper>
   </section>;
@@ -22,7 +20,10 @@ const Wrapper = styled.div`
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
-  /* align-items: start; */
+  @media (max-width: 600px) {
+    grid-template-columns: 100%; 
+  }
+  align-items: start;
 `;
 
 export default User;
